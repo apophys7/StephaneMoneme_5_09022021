@@ -1,0 +1,109 @@
+body {
+    background-color: $body-bg;
+
+    .deco {
+        font-family: $font1;
+        font-size: 1.5em;
+    }
+
+    .header {
+        background-color: $header-bg;
+        margin: 0em;
+        padding: 0em;
+        border: 1px solid $annonce-bg;
+        border-radius: 0px 0px 25px 25px;
+        nav {
+            padding: 0.5em;
+            .logo {
+                width: 60%;
+
+            }
+            div {
+                justify-content: right;
+            }
+            li {
+                margin-right: 1em;
+            }
+        }
+    }
+    .main {
+        padding: 1em;
+        margin-top: 1em;
+        margin-bottom: 13em;
+
+        .baseline {
+            margin: 1em;
+            @include text-shadow;
+
+            h2 {
+                font-family: $font1;
+                @include degrade($baseline-bg);
+                font-size: 3em;
+            }
+            p {
+                font-family: $font1;
+                font-size: 1.5em;
+            }
+        }
+
+        .venteEnCours {
+            margin: 1em;
+            padding: 0.5em;
+
+            .vente {
+                font-family: $font1;
+                font-size: 2em;
+                color: #3188C7;
+                justify-content: center;
+                font-family: $font1;
+                text-align: center;
+            }
+        }
+
+        .card {
+            @include box-shadow;
+        }
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        border: 1px solid $annonce-bg;
+        border-radius: 25px 25px 0px 0px;
+        background-color: $footer-bg;
+       min-height : 5em;
+        max-height: 11em;
+        @include text-shadow;
+
+        .minilogo {
+            margin: 0.2em;
+            width: 8em;
+        }
+
+        .zoom {
+            display: block;
+            text-decoration: none;
+            transform: scale(1);
+            opacity: 1;
+            transition-property: transform, opacity;
+            transition-duration: 1s, 1s;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+        
+
+        .shake {
+            font-size: 1em;
+        }
+
+        .shake:hover {
+            @include headshake;
+            @include text-shadow;
+        }
+        span{
+            height : 3em;
+        }
+    }
+}

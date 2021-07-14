@@ -1,0 +1,12 @@
+// footer headshake
+@keyframes headshake {
+    25% {
+
+        transform: translateX($shake-intensity);
+    }
+
+    75% {
+
+        transform: translateX($shake-intensity * -4);
+    }
+}

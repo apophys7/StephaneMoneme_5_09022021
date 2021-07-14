@@ -1,0 +1,23 @@
+// text gradient
+
+@mixin degrade($bg-degrade){
+    background: $bg-degrade;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  @mixin headshake {
+    animation: headshake 100ms cubic-bezier(.4, .1, .6, .9);
+    animation-iteration-count: 4;
+}
+
+// OMBRAGE
+
+@mixin text-shadow {
+  text-shadow: 0.1em 0.1em 0.2em rgba(190, 188, 188, 0.322);
+}
+
+
+@mixin box-shadow {
+  box-shadow: 0.1em 0.1em 1em rgba(73, 73, 73, 0.425);
+}
