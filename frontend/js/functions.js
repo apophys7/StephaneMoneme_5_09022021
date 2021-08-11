@@ -8,7 +8,7 @@ function convertPrice(productPrice) {
     price = Intl.NumberFormat("fr-FR", {
         style: "currency",
         currency: "EUR",
-        minimumFractionDigits: 2,
+        minimumFractionDigits:2,
     }).format(price / 100);
     return price;
 }

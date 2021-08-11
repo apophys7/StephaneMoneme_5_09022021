@@ -14,7 +14,7 @@ function addCards(data) {
     //boucle pour chaque iteration d'un produit
     for (produit of data) {
         //recupère l'élément liste dans le HTML
-        const card = document.getElementById("liste");
+        const card = document.getElementById("liste") ;
         //convertit le prix
         const price = convertPrice(produit.price);
         card.innerHTML += `

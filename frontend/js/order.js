@@ -2,7 +2,7 @@ const order = JSON.parse(localStorage.getItem("order")) || [];
 const date = JSON.parse(localStorage.getItem("date")) || [];
 
 // affiche Mes informations
-const informations = document.getElementById("contact");
+const informations = document.getElementById("contact") ;
 informations.innerHTML += `
     <p class="fs-5"><span class="fw-bold text-capitalize">${order.contact.firstName}</span>, merci pour votre achat sur notre site !</p>
     <p class="fs-5"> Votre commande passée le <span class="fw-bold">${date[0].date}</span> à <span class="fw-bold">${date[0].hours}</span> d'un montant total de <span class="fw-bold">${convertPrice(displayTotalBasket())}</span> a été validée.</p>

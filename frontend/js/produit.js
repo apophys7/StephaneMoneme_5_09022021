@@ -13,6 +13,7 @@ fetch(newUrl)
     .then((data) => {
         const product = data;
         addCard(data);
+        
 
         // fonction pour la création de la card de la page produit
         function addCard(product) {

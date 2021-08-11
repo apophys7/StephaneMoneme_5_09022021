@@ -36,7 +36,7 @@ if (basket.length < 1) {
         if (basket[index].quantity > 1) {
             basket[index].quantity--;
         } else {
-            basket.splice(index, 1);
+            basket.splice(index, 1) ;
         }
         localStorage.setItem("cameras", JSON.stringify(basket));
         location.reload();
